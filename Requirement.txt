@@ -1,0 +1,3 @@
+F1. Accelerator inference Tiny-Transformer / LLM nhỏ (attention + KV-cache)
+Lõi QK^T/softmax/PV + quản lý KV-cache + datapath INT8 hoặc MXFP4 (FP4 microscaling cho tăng tốc ~4–5× phần attention). Capstone chạy 1 layer thật.
+Phạm vi & độ khó — HK1: datapath + softmax + KV-cache, verify golden. HK2: bus + DMA, demo FPGA, synth ASIC. Độ khó: Cao.
